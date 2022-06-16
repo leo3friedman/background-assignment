@@ -147,9 +147,4 @@ contract Purchase {
             buyer.transfer(value);
             seller.transfer(3 * value);
         }
-
-    function setUp() external {
-        state = State.Locked;
-        timestamp = block.timestamp;
-    }
 }
